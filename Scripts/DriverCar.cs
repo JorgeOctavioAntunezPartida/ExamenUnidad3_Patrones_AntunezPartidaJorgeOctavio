@@ -116,7 +116,6 @@ public class DriveCar : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Si estamos frenando, o ya no hay gasolina → frenar
         if (_isBraking || CurrentFuel <= 0f)
         {
             BrakeWheel(_frontTireRB);
@@ -208,4 +207,5 @@ public class DriveCar : MonoBehaviour
     {
         SceneManager.LoadScene("Main");
     }
+
 }
